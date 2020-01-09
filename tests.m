@@ -37,7 +37,7 @@ mlfft1d
 %1d Allen-Cahn
 addpath('allencahn/')
 
-order=2;
+order=3;
 
 
 %error1 is Table 9 (order=2) or Table 10 (order=3) 

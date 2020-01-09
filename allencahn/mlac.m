@@ -67,7 +67,7 @@ nts=[2^3,2^4,2^5,2^6,2^7,2^8,2^9,2^10];
 
 for numt=1:9
     %N=ceil(512*2^((numt-2)/2));
-    N=4096;
+    N=2048;
     Uall=zeros(m+1,N,N);
     [Uinit,X,Y,h]=initializebigcircle(N,eps);
     %force=1/4*1./(1+exp(-1/eps^2*(4-sqrt(X.^2+Y.^2))));
