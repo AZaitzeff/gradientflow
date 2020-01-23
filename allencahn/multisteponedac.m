@@ -1,7 +1,7 @@
 addpath('findgamma/')
 [gamma,m]=getgamma(order,0);
 
-n=2^13+1;
+n=2^14+1;
 h=20/(n-1);
 x=-10:h:10;
 eps=1/4;
