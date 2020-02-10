@@ -7,11 +7,16 @@ tol=1e-9;
 tol1=1e-3;
 T=20;
 eps=1;
+if order==2
+    nts=[4,2^3,2^4,2^5,2^6];
+    n=numel(nts);
+else
+    nts=[4,2^3,2^4,2^5];
+    n=numel(nts);
+end
 
-nts=[4,2^3,2^4,2^5,2^6];
 
-
-for numt=1:5
+for numt=1:n
     N=ceil(512*2^((numt-1)/4));
     Uall=zeros(m+1,N,N);
     [Uinit,X,Y,h]=initializebigoval(N,eps);

@@ -14,7 +14,7 @@ cothtest
 addpath('odetests/')
 order=2;
 
-%error1 is the figure 3 (order=2) or Table 4 (order=3)  
+%error1 is the data for figure 2 left (order=2) or right (order=3)  
 quadratictest
 
 %%
